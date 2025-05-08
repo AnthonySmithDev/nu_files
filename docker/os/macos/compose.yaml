@@ -1,0 +1,22 @@
+services:
+  macos:
+    image: dockurr/macos
+    container_name: macos
+    environment:
+      VERSION: ${VERSION:-15}
+      RAM_SIZE: ${RAM_SIZE:-8G}
+      CPU_CORES: ${CPU_CORES:-8}
+      DISK_SIZE: ${DISK_SIZE:-256G}
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - ${NOVNC_PORT:-8006}:8006
+      - ${VNC_PORT:-5900}:5900/tcp
+      - ${VNC_PORT:-5900}:5900/udp
+    volumes:
+      - /var/os/mac/${VERSION:-15}:/storage
+    restart: always
+    stop_grace_period: 2m

@@ -1,0 +1,21 @@
+
+[general]
+import = [ "themes/ayu_dark.toml" ]
+
+[terminal]
+shell = "nu"
+
+[window]
+decorations = "None"
+opacity = 0.9
+blur = true
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "Regular"
+
+[font]
+size = 10.5
+
+[selection]
+save_to_clipboard = true

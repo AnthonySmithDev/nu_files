@@ -1,0 +1,21 @@
+services:
+  linux:
+    image: qemux/qemu
+    container_name: linux
+    environment:
+      BOOT: ${BOOT:-ubuntu}
+      DISK_SIZE: ${DISK_SIZE:-128G}
+      RAM_SIZE: ${RAM_SIZE:-4G}
+      CPU_CORES: ${CPU_CORES:-4}
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - ${NOVNC_PORT:-8006}:8006
+    volumes:
+      - /var/os/linux/${STORAGE:-ubuntu}:/storage
+      - ${VOLUMEN_KEY:-/dev/null}:${VOLUMEN_VALUE:-/dev/null}
+    restart: always
+    stop_grace_period: 2m

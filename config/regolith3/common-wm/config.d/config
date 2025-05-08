@@ -1,0 +1,5 @@
+
+for_window [class="^mpv$" floating] sticky enable, resize set width 30ppt, move down 60ppt, move right 70ppt
+
+for_window [class="scrcpy"] floating enable, sticky enable, move right 700 ppt
+for_window [title="Picture in picture"] sticky enable, floating enable, resize set 45 ppt, move right 500 ppt, move down 250 ppt

@@ -1,0 +1,42 @@
+version: 1.0.0
+log:
+    path: /tmp/vi-mongo.log
+    level: info
+    prettyPrint: true
+editor:
+    command: hx
+    env: EDITOR
+showConnectionPage: true
+showWelcomePage: false
+currentConnection: nanopay jean
+connections:
+    - url: ""
+      host: 0.0.0.0
+      port: 27018
+      database: ""
+      username: nanopay_root_user
+      password: nanopay_root_pass
+      name: nanopay dev
+      timeout: 3
+      options: {}
+    - url: ""
+      host: 0.0.0.0
+      port: 17018
+      database: ""
+      username: payzum_admin
+      password: wiweh7FOG3WJWGT0PSOX8GDSdambSvm2k6tLicj00pZlw6wS3N
+      name: nanopay kube dev
+      timeout: 3
+      options: {}
+    - url: ""
+      host: 192.168.0.21
+      port: 27018
+      database: ""
+      username: nanopay_root_user
+      password: nanopay_root_pass
+      name: nanopay jean
+      timeout: 3
+      options: {}
+styles:
+    betterSymbols: true
+    currentStyle: dark-blue.yaml

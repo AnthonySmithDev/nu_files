@@ -1,0 +1,13 @@
+
+[manager]
+ratio = [2,4,3]
+
+[opener]
+cast = [
+	{ run = 'go2tv -v "$@"', orphan = true, for = "unix" },
+]
+
+[open]
+append_rules = [
+	{ mime = "{audio,video}/*", use = [ "play", "reveal", "cast" ] },
+]

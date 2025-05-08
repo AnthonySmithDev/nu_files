@@ -1,0 +1,53 @@
+theme = "ayu_dark"
+
+[editor]
+shell = ["nu", "-c"]
+cursorline = true
+cursorcolumn = true
+true-color = true
+undercurl = true
+bufferline = "multiple"
+color-modes = true
+popup-border = "all"
+end-of-line-diagnostics = "hint"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+
+[editor.file-picker]
+hidden = false
+
+[editor.auto-save]
+focus-lost = false
+
+[editor.soft-wrap]
+enable = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+# other-lines = "warning"
+
+[keys.insert.j]
+k = "normal_mode"
+
+[keys.normal.g]
+a = "code_action"
+
+[keys.normal]
+C-y = ":pipe-to clipboard write"
+C-r = ":reload"
+C-q = ":quit"
+C-l = [
+    ":write-all",
+    ":new",
+    ":insert-output lazygit",
+    ":buffer-close!",
+    ":redraw",
+    ":reload-all"
+]
+
+[keys.select.","]
+"a" = ":pipe-to ctx"
+"s" = ":sh ctx show"
+"d" = ":sh ctx delete"

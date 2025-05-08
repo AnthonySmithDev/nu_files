@@ -1,0 +1,7 @@
+device_name = "Logitech Logi TKL Mechanical Keyboard"
+phys = "usb-0000:00:14.0-10/input0"
+
+[[dual_role]]
+input = "KEY_CAPSLOCK"
+hold = ["KEY_LEFTCTRL"]
+tap = ["KEY_ESC"]

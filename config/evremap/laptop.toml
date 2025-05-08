@@ -1,0 +1,7 @@
+device_name = "AT Translated Set 2 keyboard"
+phys = "isa0060/serio0/input0"
+
+[[dual_role]]
+input = "KEY_CAPSLOCK"
+hold = ["KEY_LEFTCTRL"]
+tap = ["KEY_ESC"]

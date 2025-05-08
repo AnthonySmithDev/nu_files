@@ -1,0 +1,25 @@
+services:
+  windows:
+    image: dockurr/windows
+    container_name: windows
+    environment:
+      VERSION: ${VERSION:-11}
+      DISK_SIZE: ${DISK_SIZE:-128G}
+      RAM_SIZE: ${RAM_SIZE:-4G}
+      CPU_CORES: ${CPU_CORES:-4}
+      USERNAME: ${USERNAME:-admin}
+      PASSWORD: ${PASSWORD:-admin}
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - ${NOVNC_PORT:-8006}:8006
+      - ${RDP_PORT:-3389}:3389/tcp
+      - ${RDP_PORT:-3389}:3389/udp
+    volumes:
+      - /var/os/win/${STORAGE:-11}:/storage
+      - ${VOLUMEN_KEY:-/dev/null}:${VOLUMEN_VALUE:-/dev/null}
+    restart: always
+    stop_grace_period: 2m

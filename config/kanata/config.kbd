@@ -1,0 +1,175 @@
+
+(defcfg
+  movemouse-inherit-accel-state yes
+  linux-dev (
+    "/dev/input/by-id/usb-SINO_WEALTH_Gaming_KB-event-kbd"
+    "/dev/input/by-id/usb-Logitech_Logi_TKL_Mechanical_Keyboard-event-kbd"
+  )
+)
+
+(deflocalkeys-linux
+  < 86
+)
+
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]
+  caps a    s    d    f    g    h    j    k    l    ;    '    \    ret
+  lsft <    z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet rctl
+)
+
+(defvar
+  fast-tap-timeout   50
+  fast-hold-timeout  100
+
+  ftt $fast-tap-timeout
+  fht $fast-hold-timeout
+
+  tap-timeout   100
+  hold-timeout  200
+
+  tt $tap-timeout
+  ht $hold-timeout
+
+  slow-tap-timeout   10
+  slow-hold-timeout  300
+
+  stt $slow-tap-timeout
+  sht $slow-hold-timeout
+)
+
+(defalias
+  lalt (tap-hold $stt $sht a lalt)
+  ralt (tap-hold $stt $sht ; ralt)
+
+  qle (tap-hold $ftt $fht esc lctl)
+  qri (tap-hold $tt $ht ' rctl)
+
+  nav (tap-hold $tt $ht f (layer-while-held navigation))
+  cap (tap-dance 100 (@qle (caps-word 2000)))
+)
+(deflayer qwerty
+  grv  1     2    3    4    5    6    7    8    9    0     -    =    bspc
+  tab  q     w    e    r    t    y    u    i    o    p     [    ]
+  @cap @lalt s    d    @nav g    h    j    k    l    @ralt @qri \    ret
+  lsft <     z    x    c    v    b    n    m    ,    .     /    rsft
+  lctl lmet  lalt           spc            ralt rmet rctl
+)
+
+(defalias
+  lsq (layer-switch qwerty)
+  lsh (layer-switch homerow)
+  lsm (layer-switch mouse)
+  lsa (layer-switch arrow)
+  lsc (layer-switch control)
+)
+(deflayer navigation
+  •    •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •    •    •    •    •    •    @lsa @lsc •    •    •
+  •    •    •    •    •    •    •    •    @lsh @lsm •    •    •    •
+  •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •              •              •    •    •
+)
+
+(defalias
+  hra (tap-hold $tt $ht a lalt)
+  hrs (tap-hold $tt $ht s lctl)
+  hrd (tap-hold $tt $ht d lsft)
+  hrf (tap-hold $tt $ht f lmet)
+
+  hrj (tap-hold $tt $ht j rmet)
+  hrk (tap-hold $tt $ht k rsft)
+  hrl (tap-hold $tt $ht l rctl)
+  hr; (tap-hold $tt $ht ; ralt)
+)
+
+(deflayer homerow
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]
+  @lsq @hra @hrs @hrd @hrf g    h    @hrj @hrk @hrl @hr; '    \    ret
+  lsft <    z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet rctl
+)
+
+(defalias
+  mwu (mwheel-up 50 120)
+  mwd (mwheel-down 50 120)
+  mwl (mwheel-left 50 120)
+  mwr (mwheel-right 50 120)
+
+  ms↑ (movemouse-up 3 1)
+  ms← (movemouse-left 3 1)
+  ms↓ (movemouse-down 3 1)
+  ms→ (movemouse-right 3 1)
+
+  msw (movemouse-right 1 2)
+  msb (movemouse-left 1 2)
+
+  ma↑ (movemouse-accel-up 1 1000 1 1)
+  ma← (movemouse-accel-left 1 1000 1 1)
+  ma↓ (movemouse-accel-down 1 1000 1 1)
+  ma→ (movemouse-accel-right 1 1000 1 1)
+
+  fst (movemouse-speed 200)
+  slw (movemouse-speed 1)
+
+  msh (layer-while-held mouseshift)
+  msc (layer-while-held mousescroll)
+)
+
+(deflayer mouse
+  •    •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    @msw mmid •    •    •    •    •    •    •    •    •
+  @lsq @msc @slw mrgt mlft @fst @ms← @ms↓ @ms↑ @ms→ rctl •    •    •
+  @msh •    •    •    •    •    @msb •    •    •    •    •    •
+  •    •    •              •              •    •    •
+)
+(deflayer mouseshift
+  •    •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •    •    •    •    @ma← @ma↓ @ma↑ @ma→ •    •    •    •
+  •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •              •              •    •    •
+)
+(deflayer mousescroll
+  •    •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •    •    •    •    @mwl @mwd @mwu @mwr •    •    •    •
+  •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •              •              •    •    •
+)
+(defalias
+  alc (tap-hold $tt $ht (layer-switch qwerty) lctl)
+  aco (layer-while-held control)
+)
+(deflayer arrow
+;;1    2    3       4      5    6    7      8     9    10    11   12    13   14
+  •    •    •       •      •    •    •      •     •    •     •    •     •    bspc
+  tab  •    C-right •      •    •    •      C-S-c C-up •     •    C-S-v •
+  @alc @aco •       C-down •    •    left   down  up   right •    rctl  •    ret
+  lsft •    C-z     C-x    C-c  C-v  C-left •     •    •     •    •     rsft
+  lctl lmet lalt                spc               ralt rmet  rctl
+)
+(deflayer control
+;;1    2    3    4    5    6    7    8    9    10   11   12   13   14
+  •    •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •    •    •    •    home pgdn pgup end  •    •    •    •
+  •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •              •              •    •    •
+)
+(deflayer numpad
+  •    •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    kp1  kp2  kp3  kp4  kp5  kp6  kp7  kp8  kp9  kp0  •    •
+  @lsq •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •              •              •    •    •
+)
+(deflayer function
+  •    •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  @lsq •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •    •    •    •    •    •    •    •    •    •    •
+  •    •    •              •              •    •    •
+)

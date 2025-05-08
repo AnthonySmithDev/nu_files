@@ -1,0 +1,166 @@
+[
+  {
+    "alias": "H1",
+    "desc": "Anthony Desktop Home",
+    "user": [
+      {
+        "name": "anthony",
+        "pass": "Smithg"
+      }
+    ],
+    "host": {
+      "local": "192.168.0.20",
+      "tailscale": "100.127.104.20"
+    },
+    "hostname": "anthony-desktop-home",
+    "private": true
+  },
+  {
+    "alias": "H2",
+    "desc": "Smith Mini Home",
+    "user": [
+      {
+        "name": "smith",
+        "pass": "smith"
+      }
+    ],
+    "host": {
+      "local": "192.168.0.111",
+      "tailscale": "100.90.23.20"
+    },
+    "hostname": "smith-desktop-home",
+    "private": true
+  },
+  {
+    "alias": "W1",
+    "desc": "Anthony Desktop Work",
+    "user": [
+      {
+        "name": "anthony",
+        "pass": "Smithg"
+      }
+    ],
+    "host": {
+      "local": "192.168.0.20",
+      "tailscale": "100.84.224.63"
+    },
+    "hostname": "anthony-desktop-work",
+    "private": true
+  },
+  {
+    "alias": "R2",
+    "desc": "R2 Desktop Work",
+    "user": [
+      {
+        "name": "freyrecorp",
+        "pass": "40149616"
+      },
+      {
+        "name": "anthony",
+        "pass": "40149616"
+      }
+    ],
+    "host": {
+      "local": "192.168.0.200",
+      "tailscale": "100.77.231.27"
+    },
+    "hostname": "r2v2",
+    "private": true
+  },
+  {
+    "alias": "S1",
+    "desc": "Han solo Desktop Work",
+    "user": [
+      {
+        "name": "freyrecorp",
+        "pass": "40149616"
+      }
+    ],
+    "host": {
+      "local": "192.168.0.11",
+      "tailscale": "100.93.208.5"
+    },
+    "hostname": "hansolo",
+    "private": false
+  },
+  {
+    "alias": "S2",
+    "desc": "Darth Vader Desktop Work",
+    "user": [
+      {
+        "name": "freyrecorp",
+        "pass": "40149616"
+      }
+    ],
+    "host": {
+      "local": "192.168.0.12",
+      "tailscale": "100.122.65.125"
+    },
+    "hostname": "darthvader",
+    "private": false
+  },
+  {
+    "alias": "S3",
+    "desc": "Yoda Desktop Work",
+    "user": [
+      {
+        "name": "freyrecorp",
+        "pass": "40149616"
+      }
+    ],
+    "host": {
+      "local": "192.168.0.13",
+      "tailscale": "100.93.5.38"
+    },
+    "hostname": "yoda",
+    "private": false
+  },
+  {
+    "alias": "S4",
+    "desc": "Kenobi Desktop Work",
+    "user": [
+      {
+        "name": "freyrecorp",
+        "pass": "40149616"
+      }
+    ],
+    "host": {
+      "local": "192.168.0.14",
+      "tailscale": "100.98.177.106"
+    },
+    "hostname": "kenobi",
+    "private": false
+  },
+  {
+    "alias": "S5",
+    "desc": "Bobafett Desktop Work",
+    "user": [
+      {
+        "name": "freyrecorp",
+        "pass": "40149616"
+      }
+    ],
+    "host": {
+      "local": "192.168.0.15",
+      "tailscale": "100.84.148.10"
+    },
+    "hostname": "bobafett",
+    "private": false
+  },
+  {
+    "alias": "J1",
+    "desc": "Jose Mackbook Air",
+    "user": [
+      {
+        "name": "jleon",
+        "pass": "Aa123456890"
+      }
+    ],
+    "host": {
+      "local": "192.168.0.0",
+      "tailscale": "100.109.71.125"
+    },
+    "hostname": "macbook-air",
+    "private": false
+  }
+]

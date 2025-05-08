@@ -1,0 +1,10 @@
+release_bind = [ "KeyA", "KeyS", "KeyD", "KeyF" ]
+
+port = 4242
+frontend = "cli"
+
+[right]
+activate_on_startup = true
+hostname = "anthony-micro-home"
+ips = ["192.168.0.12", "192.168.0.111"]
+port = 4242
