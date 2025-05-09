@@ -53,6 +53,7 @@ config.font = wezterm.font_with_fallback({
 
 config.default_prog = { 'nu', '-l' }
 
+-- local modal = wezterm.plugin.require("https://github.com/MLFlexer/modal.wezterm")
 local modal = wezterm.plugin.require("https://github.com/AnthonySmithDev/modal.wezterm")
 modal.apply_to_config(config)
 
