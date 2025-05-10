@@ -1,7 +1,7 @@
 theme = "ayu_dark"
 
 [editor]
-shell = ["nu", "-c"]
+shell = ["nu", "--login", "--stdin", "-c"]
 cursorline = true
 cursorcolumn = true
 true-color = true

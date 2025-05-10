@@ -770,8 +770,8 @@
   {
     "category": "core",
     "name": "aristocratos/btop",
-    "tag_name": "v1.4.2",
-    "created_at": "2025-05-01T20:24:11Z",
+    "tag_name": "v1.4.3",
+    "created_at": "2025-05-10T11:02:34Z",
     "assets": [
       "btop-aarch64-linux-musl.tbz",
       "btop-arm-linux-musleabi.tbz",
@@ -979,19 +979,38 @@
   },
   {
     "category": "core",
-    "name": "xo/usql",
-    "tag_name": "v0.19.21",
-    "created_at": "2025-04-06T20:55:09Z",
+    "name": "nickgerace/gfold",
+    "tag_name": "2025.4.0",
+    "created_at": "2025-04-02T04:44:31Z",
     "assets": [
-      "usql-0.19.21-darwin-amd64.tar.bz2",
-      "usql-0.19.21-darwin-arm64.tar.bz2",
-      "usql-0.19.21-darwin-universal.tar.bz2",
-      "usql-0.19.21-linux-amd64.tar.bz2",
-      "usql-0.19.21-linux-arm.tar.bz2",
-      "usql-0.19.21-linux-arm64.tar.bz2",
-      "usql-0.19.21-windows-amd64.zip",
-      "usql_static-0.19.21-linux-amd64.tar.bz2",
-      "usql_static-0.19.21-linux-arm64.tar.bz2"
+      "gfold-darwin-aarch64",
+      "gfold-darwin-x86-64",
+      "gfold-linux-gnu-aarch64",
+      "gfold-linux-gnu-powerpc64le",
+      "gfold-linux-gnu-x86-64",
+      "gfold-linux-musl-aarch64",
+      "gfold-linux-musl-x86-64",
+      "gfold-windows-x86-64.exe"
+    ],
+    "linux_x64": {
+      "ends": "linux-musl-x86-64"
+    }
+  },
+  {
+    "category": "core",
+    "name": "xo/usql",
+    "tag_name": "v0.19.23",
+    "created_at": "2025-05-09T20:41:06Z",
+    "assets": [
+      "usql-0.19.23-darwin-amd64.tar.bz2",
+      "usql-0.19.23-darwin-arm64.tar.bz2",
+      "usql-0.19.23-darwin-universal.tar.bz2",
+      "usql-0.19.23-linux-amd64.tar.bz2",
+      "usql-0.19.23-linux-arm.tar.bz2",
+      "usql-0.19.23-linux-arm64.tar.bz2",
+      "usql-0.19.23-windows-amd64.zip",
+      "usql_static-0.19.23-linux-amd64.tar.bz2",
+      "usql_static-0.19.23-linux-arm64.tar.bz2"
     ],
     "linux_x64": {
       "starts": "usql_static",
@@ -1372,8 +1391,7 @@
     "category": "extra",
     "name": "mitmproxy/mitmproxy",
     "tag_name": "v12.0.1",
-    "created_at": "2025-05-06T22:12:23Z",
-    "assets": []
+    "created_at": "2025-05-06T22:12:23Z"
   },
   {
     "category": "extra",
@@ -1532,8 +1550,8 @@
   {
     "category": "extra",
     "name": "sarub0b0/kubetui",
-    "tag_name": "v1.7.0",
-    "created_at": "2025-03-29T06:12:26Z",
+    "tag_name": "v1.7.1",
+    "created_at": "2025-05-10T05:49:18Z",
     "assets": [
       "kubetui-aarch64-apple-darwin",
       "kubetui-x86_64-apple-darwin",
@@ -2426,15 +2444,15 @@
   {
     "category": "other",
     "name": "plandex-ai/plandex",
-    "tag_name": "cli/v2.1.1",
-    "created_at": "2025-05-02T17:38:12Z",
+    "tag_name": "cli/v2.1.2",
+    "created_at": "2025-05-08T17:52:38Z",
     "assets": [
-      "plandex_2.1.1_darwin_amd64.tar.gz",
-      "plandex_2.1.1_darwin_arm64.tar.gz",
-      "plandex_2.1.1_freebsd_amd64.tar.gz",
-      "plandex_2.1.1_freebsd_arm64.tar.gz",
-      "plandex_2.1.1_linux_amd64.tar.gz",
-      "plandex_2.1.1_linux_arm64.tar.gz"
+      "plandex_2.1.2_darwin_amd64.tar.gz",
+      "plandex_2.1.2_darwin_arm64.tar.gz",
+      "plandex_2.1.2_freebsd_amd64.tar.gz",
+      "plandex_2.1.2_freebsd_arm64.tar.gz",
+      "plandex_2.1.2_linux_amd64.tar.gz",
+      "plandex_2.1.2_linux_arm64.tar.gz"
     ],
     "linux_x64": {
       "ends": "linux_amd64.tar.gz"
@@ -3867,19 +3885,18 @@
   {
     "category": "other",
     "name": "balena-io/etcher",
-    "tag_name": "v2.1.0",
-    "created_at": "2025-02-27T16:16:59Z",
+    "tag_name": "v2.1.2",
+    "created_at": "2025-05-08T08:51:48Z",
     "assets": [
-      "balena-etcher-2.1.0-1.x86_64.rpm",
-      "balena-etcher_2.1.0_amd64.deb",
-      "balenaEtcher-2.1.0-arm64.dmg",
-      "balenaEtcher-2.1.0-x64.AppImage",
-      "balenaEtcher-2.1.0-x64.dmg",
-      "balenaEtcher-2.1.0.Setup.exe",
-      "balenaEtcher-darwin-arm64-2.1.0.zip",
-      "balenaEtcher-darwin-x64-2.1.0.zip",
-      "balenaEtcher-linux-x64-2.1.0.zip",
-      "balenaEtcher-win32-x64-2.1.0.zip"
+      "balena-etcher-2.1.2-1.x86_64.rpm",
+      "balena-etcher_2.1.2_amd64.deb",
+      "balenaEtcher-2.1.2-arm64.dmg",
+      "balenaEtcher-2.1.2-x64.dmg",
+      "balenaEtcher-2.1.2.Setup.exe",
+      "balenaEtcher-darwin-arm64-2.1.2.zip",
+      "balenaEtcher-darwin-x64-2.1.2.zip",
+      "balenaEtcher-linux-x64-2.1.2.zip",
+      "balenaEtcher-win32-x64-2.1.2.zip"
     ],
     "linux_x64": {
       "starts": "balenaEtcher-linux-x64"
@@ -3937,8 +3954,8 @@
   {
     "category": "other",
     "name": "oven-sh/bun",
-    "tag_name": "bun-v1.2.12",
-    "created_at": "2025-05-04T06:01:44Z",
+    "tag_name": "bun-v1.2.13",
+    "created_at": "2025-05-10T04:26:28Z",
     "assets": [
       "bun-darwin-aarch64-profile.zip",
       "bun-darwin-aarch64.zip",
@@ -4062,22 +4079,20 @@
   {
     "category": "other",
     "name": "logseq/logseq",
-    "tag_name": "0.10.10",
-    "created_at": "2025-05-06T17:56:23Z",
+    "tag_name": "0.10.9",
+    "created_at": "2024-04-23T04:24:30Z",
     "assets": [
-      "Logseq-android-0.10.10.apk",
-      "Logseq-darwin-arm64-0.10.10.dmg",
-      "Logseq-darwin-arm64-0.10.10.zip",
-      "Logseq-darwin-x64-0.10.10.dmg",
-      "Logseq-darwin-x64-0.10.10.zip",
-      "Logseq-linux-arm64-0.10.10.zip",
-      "Logseq-linux-x64-0.10.10.AppImage",
-      "Logseq-linux-x64-0.10.10.zip",
-      "Logseq-win-x64-0.10.10-alpha+nightly.20250506.exe",
-      "Logseq-win-x64-0.10.10-full.nupkg",
-      "Logseq-win-x64-0.10.10.exe",
-      "Logseq-win-x64-0.10.10.msi",
-      "Logseq-win-x64-0.10.10.zip",
+      "Logseq-android-0.10.9.apk",
+      "Logseq-darwin-arm64-0.10.9.dmg",
+      "Logseq-darwin-arm64-0.10.9.zip",
+      "Logseq-darwin-x64-0.10.9.dmg",
+      "Logseq-darwin-x64-0.10.9.zip",
+      "Logseq-linux-arm64-0.10.9.zip",
+      "Logseq-linux-x64-0.10.9.AppImage",
+      "Logseq-linux-x64-0.10.9.zip",
+      "Logseq-win-x64-0.10.9-full.nupkg",
+      "Logseq-win-x64-0.10.9.exe",
+      "Logseq-win-x64-0.10.9.zip",
       "RELEASES",
       "VERSION"
     ],
@@ -4244,14 +4259,18 @@
   {
     "category": "other",
     "name": "telegramdesktop/tdesktop",
-    "tag_name": "v5.14.1",
-    "created_at": "2025-05-01T15:01:11Z",
+    "tag_name": "v5.14.2",
+    "created_at": "2025-05-09T06:01:55Z",
     "assets": [
-      "tdesktop-5.14.1-full.tar.gz",
-      "tportable-x64.5.14.1.zip",
-      "tportable.5.14.1.zip",
-      "tsetup-x64.5.14.1.exe",
-      "tsetup.5.14.1.exe"
+      "tdesktop-5.14.2-full.tar.gz",
+      "tportable-arm64.5.14.2.zip",
+      "tportable-x64.5.14.2.zip",
+      "tportable.5.14.2.zip",
+      "tsetup-arm64.5.14.2.exe",
+      "tsetup-x64.5.14.2.exe",
+      "tsetup.5.14.2.dmg",
+      "tsetup.5.14.2.exe",
+      "tsetup.5.14.2.tar.xz"
     ],
     "linux_x64": {
       "ends": "tdesktop-5.10.6-full.tar.gz"
@@ -4472,22 +4491,22 @@
   {
     "category": "other",
     "name": "raphamorim/rio",
-    "tag_name": "v0.2.14",
-    "created_at": "2025-05-05T17:20:28Z",
+    "tag_name": "v0.2.15",
+    "created_at": "2025-05-08T21:48:38Z",
     "assets": [
       "rio-installer-aarch64.msi",
       "rio-installer-x86_64.msi",
       "rio-portable-aarch64.exe",
       "rio-portable-x86_64.exe",
       "rio.dmg",
-      "rioterm-0.2.14-1.aarch64_wayland.rpm",
-      "rioterm-0.2.14-1.aarch64_x11.rpm",
-      "rioterm-0.2.14-1.x86_64_wayland.rpm",
-      "rioterm-0.2.14-1.x86_64_x11.rpm",
-      "rioterm_0.2.14_amd64_wayland.deb",
-      "rioterm_0.2.14_amd64_x11.deb",
-      "rioterm_0.2.14_arm64_wayland.deb",
-      "rioterm_0.2.14_arm64_x11.deb"
+      "rioterm-0.2.15-1.aarch64_wayland.rpm",
+      "rioterm-0.2.15-1.aarch64_x11.rpm",
+      "rioterm-0.2.15-1.x86_64_wayland.rpm",
+      "rioterm-0.2.15-1.x86_64_x11.rpm",
+      "rioterm_0.2.15_amd64_wayland.deb",
+      "rioterm_0.2.15_amd64_x11.deb",
+      "rioterm_0.2.15_arm64_wayland.deb",
+      "rioterm_0.2.15_arm64_x11.deb"
     ]
   },
   {
@@ -4538,8 +4557,8 @@
   {
     "category": "other",
     "name": "simulot/immich-go",
-    "tag_name": "v0.26.1",
-    "created_at": "2025-05-06T17:41:11Z",
+    "tag_name": "v0.26.2",
+    "created_at": "2025-05-08T07:56:53Z",
     "assets": [
       "immich-go_Darwin_arm64.tar.gz",
       "immich-go_Darwin_x86_64.tar.gz",
@@ -5105,20 +5124,20 @@
   {
     "category": "other",
     "name": "lukehaas/RunJS",
-    "tag_name": "v3.1.1",
-    "created_at": "2025-04-20T11:49:24Z",
+    "tag_name": "v3.1.2",
+    "created_at": "2025-05-08T17:17:59Z",
     "assets": [
-      "RunJS-3.1.1-arm64.AppImage",
-      "runjs-3.1.1-arm64.tar.gz",
-      "RunJS-3.1.1-universal-mac.zip",
-      "RunJS-3.1.1-universal.dmg",
-      "runjs-3.1.1.aarch64.rpm",
-      "RunJS-3.1.1.AppImage",
-      "runjs-3.1.1.tar.gz",
-      "runjs-3.1.1.x86_64.rpm",
-      "RunJS-Setup-3.1.1.exe",
-      "runjs_3.1.1_amd64.deb",
-      "runjs_3.1.1_arm64.deb"
+      "RunJS-3.1.2-arm64.AppImage",
+      "runjs-3.1.2-arm64.tar.gz",
+      "RunJS-3.1.2-universal-mac.zip",
+      "RunJS-3.1.2-universal.dmg",
+      "runjs-3.1.2.aarch64.rpm",
+      "RunJS-3.1.2.AppImage",
+      "runjs-3.1.2.tar.gz",
+      "runjs-3.1.2.x86_64.rpm",
+      "RunJS-Setup-3.1.2.exe",
+      "runjs_3.1.2_amd64.deb",
+      "runjs_3.1.2_arm64.deb"
     ],
     "linux_x64": {
       "ends": ".tar.gz"
@@ -5175,8 +5194,8 @@
   {
     "category": "other",
     "name": "hoppscotch/releases",
-    "tag_name": "v25.4.1-0",
-    "created_at": "2025-04-30T16:48:48Z",
+    "tag_name": "v25.4.2-0",
+    "created_at": "2025-05-07T13:11:56Z",
     "assets": [
       "Hoppscotch_linux_x64.AppImage",
       "Hoppscotch_linux_x64.deb",
@@ -5724,8 +5743,8 @@
   {
     "category": "android",
     "name": "t895/DNSNet",
-    "tag_name": "1.2.2",
-    "created_at": "2025-05-07T18:40:17Z",
+    "tag_name": "1.2.3",
+    "created_at": "2025-05-09T04:48:44Z",
     "assets": [
       "app-release.aab",
       "app-release.apk",
@@ -5762,8 +5781,8 @@
   {
     "category": "android",
     "name": "FriesI23/mhabit",
-    "tag_name": "v1.16.9+77",
-    "created_at": "2025-05-07T13:03:24Z",
+    "tag_name": "v1.16.10+78",
+    "created_at": "2025-05-09T08:52:56Z",
     "assets": [
       "app-arm64-v8a-release.apk",
       "app-armeabi-v7a-release.apk",
@@ -5932,8 +5951,8 @@
   {
     "category": "android",
     "name": "Arturo254/OpenTune",
-    "tag_name": "1.9.7",
-    "created_at": "2025-04-03T04:24:39Z",
+    "tag_name": "1.9.8",
+    "created_at": "2025-05-09T03:09:38Z",
     "assets": [
       "app-release.apk"
     ],
